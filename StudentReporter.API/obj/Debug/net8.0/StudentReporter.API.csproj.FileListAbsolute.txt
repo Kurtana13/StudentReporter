@@ -142,3 +142,4 @@ C:\Users\Saba\source\repos\StudentReporter\StudentReporter.API\obj\Debug\net8.0\
 C:\Users\Saba\source\repos\StudentReporter\StudentReporter.API\obj\Debug\net8.0\StudentReporter.API.pdb
 C:\Users\Saba\source\repos\StudentReporter\StudentReporter.API\obj\Debug\net8.0\StudentReporter.API.genruntimeconfig.cache
 C:\Users\Saba\source\repos\StudentReporter\StudentReporter.API\obj\Debug\net8.0\ref\StudentReporter.API.dll
+C:\Users\Saba\source\repos\StudentReporter\StudentReporter.API\obj\Debug\net8.0\StudentReporter.API.sourcelink.json

@@ -94,6 +94,11 @@ namespace StudentReporter.API.Data
                 .OnDelete(DeleteBehavior.SetNull)
                 .HasForeignKey(ew => ew.StatusId);
             });
+
+            builder.Entity<Status>().HasData(
+                new Status { Id = 1, Name = "Attended" },
+                new Status { Id = 2, Name = "Absent" }
+            );
         }
 
         public DbSet<AttendanceSummary> AttendanceSummaries { get; set; }

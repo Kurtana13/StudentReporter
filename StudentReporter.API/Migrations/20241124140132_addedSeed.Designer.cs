@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StudentReporter.API.Data;
 
@@ -11,9 +12,11 @@ using StudentReporter.API.Data;
 namespace StudentReporter.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241124140132_addedSeed")]
+    partial class addedSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,6 +77,21 @@ namespace StudentReporter.API.Migrations
                         {
                             Id = 2,
                             Name = "Absent"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Late"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Excused"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Unexcused Absence"
                         });
                 });
 
